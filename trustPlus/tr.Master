@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="tr.master.cs" Inherits="trustPlus.tr" %>
+
+<!DOCTYPE html>
+<HTML lang="en">
+<HEAD id="HEAD1" runat="server">
+    <META charset="utf-8" />
+    <META name="viewport" content="width=device-width, initial-scale=1">
+    <META http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <TITLE><%: Page.Title %>&nbsp;正信旅游&nbsp;|&nbsp;正信联合出国顾问公司</TITLE>
+    <LINK href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <LINK href="~/css/bootstrap.css" rel="stylesheet" />
+    <LINK href="~/css/style.css" rel="stylesheet" />
+    <LINK href="~/css/animate.css" rel="stylesheet" />
+    <LINK href="~/css/slider.css" rel="stylesheet" />
+    <LINK href="~/css/responsive.css" rel="stylesheet" />
+    <LINK href="~/css/para.css" rel="stylesheet" />
+    <LINK href="~/css/themes.css" rel="stylesheet" />
+    <LINK href="~/css/responsiveslides.css" rel="stylesheet" />
+    <LINK href="~/css/flexslider.css" type="text/css" media="screen" rel="stylesheet" />
+    <LINK href="~/dist/css/social-share-kit.css" type="text/css" rel="stylesheet">
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+
+</HEAD>
+<BODY>
+
+    <FORM id="FORM1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=272931&clcid=0x409 --%>
+                <%--Framework scripts--%>
+                <%--                <asp:ScriptReference Name="MsAjaxBundle" />--%>
+                <asp:ScriptReference Name="jquery" />
+                <%--                <asp:ScriptReference Name="jquery.ui.combined" />--%>
+                <%--Site scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+        <HEADER>
+            <!--header-->
+            <DIV class="para-t-header">
+                <DIV class="container">
+                    <DIV class="top-nav-t">
+                        <UL class="nav">
+                            <LI><A href="../travel/travel-main.aspx" class="scroll" >
+                                <IMG src="../images/logo-n.png" alt=""/></A></LI>
+                            <LI><A href="../travel/special.aspx" class="scroll" >独家尊享</A></LI>
+                            <LI><A href="../travel/journey.aspx" class="scroll" >特色行程</A></LI>
+                            <LI><A href="../travel/planning.aspx" class="scroll" >旅行定制</A></LI>
+                            <LI><A href="../travel/sceneries.aspx" class="scroll" >景点介绍</A></LI>
+                        </UL>
+                    </DIV>
+                </DIV>
+                <!---->
+            </DIV>
+        </HEADER>
+
+        <DIV id="body" class="body">
+            <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+            <SECTION class="content-wrapper main-content clear-fix">
+                <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+            </SECTION>
+        </DIV>
+        <FOOTER>
+            <DIV class="footer">
+                <DIV class="footer-bottom">
+
+                    <DIV style="width: 50%; color: #fff; margin: 0 auto; font-size: medium;">
+                        <DIV style="float: right; width: 50%;">
+                            <UL style="list-style-type: none;">
+                                <LI><B>加拿大·多伦多·总部</B></LI>
+                                <LI>地址：2075 Kennedy Road,Suite 405,M1T 3V3,Toronto</LI>
+                                <LI>加拿大电话：+1-416-321-9699</LI>
+                            </UL>
+                        </DIV>
+                        <DIV class="copyrtrt" style="float: left; width: 50%;">
+                            <UL style="list-style-type: none;">
+                                <LI><B>中国·上海徐汇·总部</B></LI>
+                                <LI>地址：上海市徐汇区华山路2088号700室</LI>
+                                <LI>上海电话：+86-21-54070506</LI>
+
+                            </UL>
+                        </DIV>
+                    </DIV>
+                    <DIV class="clearfix"></DIV>
+                </DIV>
+                <DIV class="footer-top2">
+                    <P>&#169; 2016 Trust Plus Overseas Affairs incorporation. (正信联合出国顾问公司) All rights reserved.</P>
+                </DIV>
+            </DIV>
+        </FOOTER>
+    </FORM>
+</BODY>
+</HTML>

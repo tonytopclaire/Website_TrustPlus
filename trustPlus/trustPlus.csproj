@@ -1,0 +1,1297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C6B2F44C-5F83-4137-BCC6-AD7A0CC1611B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>trustPlus</RootNamespace>
+    <AssemblyName>trustPlus</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.7.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery.UI.Combined">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.UI.Combined.1.8.20\lib\net45\AspNet.ScriptManager.jQuery.UI.Combined.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.1\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.1.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.0.0\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="contact.aspx" />
+    <Content Include="css\lightbox.css" />
+    <Content Include="css\responsiveslides.css" />
+    <Content Include="css\themes.css" />
+    <Content Include="dist\css\social-share-kit.css" />
+    <Content Include="dist\fonts\social-share-kit.svg" />
+    <Content Include="dist\js\social-share-kit.js" />
+    <Content Include="dist\js\social-share-kit.min.js" />
+    <Content Include="education.aspx" />
+    <Content Include="firstclass\firstclass_5.aspx" />
+    <Content Include="firstclass\firstclass_4.aspx" />
+    <Content Include="firstclass\firstclass_3.aspx" />
+    <Content Include="firstclass\firstclass_2.aspx" />
+    <Content Include="Images\ielts.jpg" />
+    <Content Include="Images\immigration.jpg" />
+    <Content Include="Images\TEF.png" />
+    <Content Include="Images\union-1.png" />
+    <Content Include="Images\union-2.png" />
+    <Content Include="Images\union-3.png" />
+    <Content Include="Images\union-4.png" />
+    <Content Include="Images\visiting.jpg" />
+    <Content Include="investment\bc.aspx" />
+    <Content Include="pnp.aspx" />
+    <Content Include="schools\schoolsv5.aspx" />
+    <Content Include="schools\schoolsv4.aspx" />
+    <Content Include="schools\schoolsv3.aspx" />
+    <Content Include="schools\schoolsv2.aspx" />
+    <Content Include="visa\visav16.aspx" />
+    <Content Include="visa\visav15.aspx" />
+    <Content Include="visa\visav17.aspx" />
+    <Content Include="visa\visav14.aspx" />
+    <Content Include="visa\visav13.aspx" />
+    <Content Include="visa\visav5.aspx" />
+    <Content Include="visa\visav6.aspx" />
+    <Content Include="visa\visav7.aspx" />
+    <Content Include="visa\visav8.aspx" />
+    <Content Include="visa\visav9.aspx" />
+    <Content Include="visa\visav12.aspx" />
+    <Content Include="visa\visav10.aspx" />
+    <Content Include="visa\visav11.aspx" />
+    <Content Include="visa\visav4.aspx" />
+    <Content Include="visa\visav3.aspx" />
+    <Content Include="visa\firstclass.aspx" />
+    <Content Include="housing-trust\housingtrust.aspx" />
+    <Content Include="housing-trust\services.aspx" />
+    <Content Include="Images\.picasaoriginals\22.jpg" />
+    <Content Include="Images\1458860627_facebook.svg" />
+    <Content Include="css\animate.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\flexslider.css" />
+    <Content Include="css\para.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\scrolling-nav.css" />
+    <Content Include="css\style.css" />
+    <Content Include="fonts\flexslider-icon.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Images\0001.jpg" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="Images\22.jpg" />
+    <Content Include="Images\23.jpg" />
+    <Content Include="Images\24.jpg" />
+    <Content Include="Images\25.jpg" />
+    <Content Include="Images\26.jpg" />
+    <Content Include="Images\27.jpg" />
+    <Content Include="Images\28.jpg" />
+    <Content Include="Images\29.jpg" />
+    <Content Include="Images\30.jpg" />
+    <Content Include="Images\31.jpg" />
+    <Content Include="Images\32.jpg" />
+    <Content Include="Images\33.jpg" />
+    <Content Include="Images\34.jpg" />
+    <Content Include="Images\35.jpg" />
+    <Content Include="Images\36.jpg" />
+    <Content Include="Images\37.jpg" />
+    <Content Include="Images\38.jpg" />
+    <Content Include="Images\39.jpg" />
+    <Content Include="Images\40.jpg" />
+    <Content Include="Images\41.jpg" />
+    <Content Include="Images\42.jpg" />
+    <Content Include="Images\43.jpg" />
+    <Content Include="Images\44.jpg" />
+    <Content Include="Images\45.jpg" />
+    <Content Include="Images\46.jpg" />
+    <Content Include="Images\ar.png" />
+    <Content Include="Images\arrow1.png" />
+    <Content Include="Images\arrow1h.png" />
+    <Content Include="Images\arrow2h.png" />
+    <Content Include="Images\arrow3.png" />
+    <Content Include="Images\barcode.png" />
+    <Content Include="Images\bg_play_pause.png" />
+    <Content Include="Images\blackheaderbg.jpg" />
+    <Content Include="Images\blank.png" />
+    <Content Include="Images\brand.jpg" />
+    <Content Include="Images\brand.png" />
+    <Content Include="Images\business.jpg" />
+    <Content Include="Images\b_main.jpg" />
+    <Content Include="Images\Canadian-Money.jpg" />
+    <Content Include="Images\circle1.png" />
+    <Content Include="Images\circle2.png" />
+    <Content Include="Images\city.jpg" />
+    <Content Include="Images\close.png" />
+    <Content Include="Images\cloud.png" />
+    <Content Include="Images\college.jpeg" />
+    <Content Include="Images\family.jpg" />
+    <Content Include="Images\furley_bg.png" />
+    <Content Include="Images\hc1.jpg" />
+    <Content Include="Images\hc2.jpg" />
+    <Content Include="Images\high.jpg" />
+    <Content Include="Images\holiday.png" />
+    <Content Include="Images\housing.jpg" />
+    <Content Include="Images\hp\alan.jpg" />
+    <Content Include="Images\hp\alex.jpg" />
+    <Content Include="Images\hp\anne.jpg" />
+    <Content Include="Images\hp\daniel.jpg" />
+    <Content Include="Images\hp\emily.jpg" />
+    <Content Include="Images\hp\hong.jpg" />
+    <Content Include="Images\hp\james.jpg" />
+    <Content Include="Images\hp\kathy.jpg" />
+    <Content Include="Images\hp\lex.jpg" />
+    <Content Include="Images\hp\original\sh2x.jpg" />
+    <Content Include="Images\hp\original\sh3x.jpg" />
+    <Content Include="Images\hp\original\sh5x.jpg" />
+    <Content Include="Images\hp\original\sh1x.jpg" />
+    <Content Include="Images\hp\original\alan.jpg" />
+    <Content Include="Images\hp\original\alex.jpg" />
+    <Content Include="Images\hp\original\anne.jpg" />
+    <Content Include="Images\hp\original\daniel.jpg" />
+    <Content Include="Images\hp\original\emily.jpg" />
+    <Content Include="Images\hp\original\hong.jpg" />
+    <Content Include="Images\hp\original\james.jpg" />
+    <Content Include="Images\hp\original\kathy.jpg" />
+    <Content Include="Images\hp\original\lex.jpg" />
+    <Content Include="Images\hp\original\sally.jpg" />
+    <Content Include="Images\hp\original\tony.jpg" />
+    <Content Include="Images\hp\original\Yvonne-m.jpg" />
+    <Content Include="Images\hp\original\Yvonne-s.jpg" />
+    <Content Include="Images\hp\sally.jpg" />
+    <Content Include="Images\hp\sh01.jpg" />
+    <Content Include="Images\hp\sh02.jpg" />
+    <Content Include="Images\hp\sh03.jpg" />
+    <Content Include="Images\hp\sh04.jpg" />
+    <Content Include="Images\hp\tony.jpg" />
+    <Content Include="Images\hp\Yvonne-m.jpg" />
+    <Content Include="Images\hp\Yvonne-s.jpg" />
+    <Content Include="Images\iccrc.png" />
+    <Content Include="Images\im.jpg" />
+    <Content Include="Images\img-sprite.png" />
+    <Content Include="Images\insurance.jpg" />
+    <Content Include="Images\left.png" />
+    <Content Include="Images\lmia.jpg" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Images\logo-b.png" />
+    <Content Include="Images\logo-i.png" />
+    <Content Include="Images\logo-n-h.png" />
+    <Content Include="Images\logo-n.png" />
+    <Content Include="Images\logo-o.png" />
+    <Content Include="Images\logo-v.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\master.jpg" />
+    <Content Include="Images\menu.png" />
+    <Content Include="Images\middle.jpg" />
+    <Content Include="Images\m_main.jpg" />
+    <Content Include="Images\next.png" />
+    <Content Include="Images\sponsor.jpg" />
+    <Content Include="Images\student.jpg" />
+    <Content Include="Images\travel\1-150202164951407.jpg" />
+    <Content Include="Images\travel\1-1502021H111Q5.jpg" />
+    <Content Include="Images\travel\1-150205154140491.jpg" />
+    <Content Include="Images\travel\1-150205162TA61.jpg" />
+    <Content Include="Images\travel\1-1502051A4414S.jpg" />
+    <Content Include="Images\travel\1-1502051F051R5.jpg" />
+    <Content Include="Images\travel\alb\1-150202164951407.jpg" />
+    <Content Include="Images\travel\alb\1-150202164S4623.jpg" />
+    <Content Include="Images\travel\alb\1-150202164Z2107.jpg" />
+    <Content Include="Images\travel\alb\1-1502021A00G96.jpg" />
+    <Content Include="Images\travel\alb\1-1502021A031533.jpg" />
+    <Content Include="Images\travel\alb\1-1502021A05W31.jpg" />
+    <Content Include="Images\travel\alb\1-1502021A24Sc.jpg" />
+    <Content Include="Images\travel\alb\1-1502021A311415.jpg" />
+    <Content Include="Images\travel\alb\1-1502021A339334.jpg" />
+    <Content Include="Images\travel\alb\1-1502021A355940.jpg" />
+    <Content Include="Images\travel\alb\1-1502021A439A1.jpg" />
+    <Content Include="Images\travel\alb\1-1502021A501V2.jpg" />
+    <Content Include="Images\travel\alb\1-1502021AI0424.jpg" />
+    <Content Include="Images\travel\alb\1-1502021AJRY.jpg" />
+    <Content Include="Images\travel\bc\1-150205150352G1.jpg" />
+    <Content Include="Images\travel\bc\1-150205150415364.jpg" />
+    <Content Include="Images\travel\bc\1-15020515044M06.jpg" />
+    <Content Include="Images\travel\bc\1-150205150F0N7.jpg" />
+    <Content Include="Images\travel\bc\1-150205150ZQT.jpg" />
+    <Content Include="Images\travel\bc\1-150205151009245.jpg" />
+    <Content Include="Images\travel\bc\1-15020515121b95.jpg" />
+    <Content Include="Images\travel\bc\1-15020515131G59.jpg" />
+    <Content Include="Images\travel\bc\1-150205151355249.jpg" />
+    <Content Include="Images\travel\bc\1-1502051514343P.jpg" />
+    <Content Include="Images\travel\bc\1-15020515230H37.jpg" />
+    <Content Include="Images\travel\bc\1-150205152401N9.jpg" />
+    <Content Include="Images\travel\bc\1-1502051530515V.jpg" />
+    <Content Include="Images\travel\bc\1-15020515323LT.jpg" />
+    <Content Include="Images\travel\bc\1-15020515331EW.jpg" />
+    <Content Include="Images\travel\iq\1-1502051A4414S.jpg" />
+    <Content Include="Images\travel\iq\1-1502051A620945.jpg" />
+    <Content Include="Images\travel\mb\1-150205162TA61.jpg" />
+    <Content Include="Images\travel\mb\1-150205163010W6.jpg" />
+    <Content Include="Images\travel\mb\1-150205163045500.jpg" />
+    <Content Include="Images\travel\mb\1-15020516310X13.jpg" />
+    <Content Include="Images\travel\mb\1-150205163142J0.jpg" />
+    <Content Include="Images\travel\mb\1-15020516315UG.jpg" />
+    <Content Include="Images\travel\mb\1-150205163230B7.jpg" />
+    <Content Include="Images\travel\mb\1-15020516324XI.jpg" />
+    <Content Include="Images\travel\mb\1-150205163320316.jpg" />
+    <Content Include="Images\travel\mb\1-1502051633403I.jpg" />
+    <Content Include="Images\travel\mb\1-150205163425T8.jpg" />
+    <Content Include="Images\travel\mb\1-15020516344CE.jpg" />
+    <Content Include="Images\travel\new\1-150205163Z9B9.jpg" />
+    <Content Include="Images\travel\new\1-150205164012U7.jpg" />
+    <Content Include="Images\travel\new\1-1502051640521B.jpg" />
+    <Content Include="Images\travel\new\1-1502051A13K21.jpg" />
+    <Content Include="Images\travel\new\1-1502051A203950.jpg" />
+    <Content Include="Images\travel\on\1-1502021I335P6.jpg" />
+    <Content Include="Images\travel\on\1-1502021I34bC.jpg" />
+    <Content Include="Images\travel\on\1-1502021I40Rb.jpg" />
+    <Content Include="Images\travel\on\1-1502021I42HI.jpg" />
+    <Content Include="Images\travel\on\1-1502021I610H0.jpg" />
+    <Content Include="Images\travel\on\1-1502021I631258.jpg" />
+    <Content Include="Images\travel\on\1-1502021I921E4.jpg" />
+    <Content Include="Images\travel\on\1-1502021I93HT.jpg" />
+    <Content Include="Images\travel\on\1-1502021IFOa.jpg" />
+    <Content Include="Images\travel\on\1-1502021IH2626.jpg" />
+    <Content Include="Images\travel\on\1-1502021IJ4H2.jpg" />
+    <Content Include="Images\travel\on\1-1502021IKJC.jpg" />
+    <Content Include="Images\travel\on\1-1502021IQID.jpg" />
+    <Content Include="Images\travel\on\1-1502021ISJ41.jpg" />
+    <Content Include="Images\travel\on\1-1502021J004U0.jpg" />
+    <Content Include="Images\travel\on\1-1502021J021Y5.jpg" />
+    <Content Include="Images\travel\on\1-1502021J03YB.jpg" />
+    <Content Include="Images\travel\on\1-1502021J051947.jpg" />
+    <Content Include="Images\travel\on\1-1502021J110961.jpg" />
+    <Content Include="Images\travel\on\1-1502021J12cJ.jpg" />
+    <Content Include="Images\travel\on\1-1502021J20S05.jpg" />
+    <Content Include="Images\travel\on\1-1502021J230429.jpg" />
+    <Content Include="Images\travel\on\1-1502021J230429.png" />
+    <Content Include="Images\travel\on\articleflash1.jpg" />
+    <Content Include="Images\travel\on\articleflash2.jpg" />
+    <Content Include="Images\o_main.jpg" />
+    <Content Include="Images\PEQ\professions\cp01.jpg" />
+    <Content Include="Images\PEQ\professions\cp02.jpg" />
+    <Content Include="Images\PEQ\professions\cp03.jpg" />
+    <Content Include="Images\PEQ\professions\cp04.jpg" />
+    <Content Include="Images\PEQ\professions\cp05.jpg" />
+    <Content Include="Images\PEQ\professions\cp06.jpg" />
+    <Content Include="Images\PEQ\professions\cp07.jpg" />
+    <Content Include="Images\PEQ\professions\cp08.jpg" />
+    <Content Include="Images\PEQ\professions\cp09.jpg" />
+    <Content Include="Images\PEQ\professions\cp10.jpg" />
+    <Content Include="Images\PEQ\professions\cp11.jpg" />
+    <Content Include="Images\PEQ\school\lbps\lbps001.JPG" />
+    <Content Include="Images\PEQ\school\pmcc\pmcc001.jpg" />
+    <Content Include="Images\PEQ\school\teluq\teluq001.jpg" />
+    <Content Include="Images\phoneIcon.png" />
+    <Content Include="Images\prev.png" />
+    <Content Include="Images\qbb.jpg" />
+    <Content Include="Images\qbp.jpg" />
+    <Content Include="Images\qbp2.jpg" />
+    <Content Include="Images\q_main.jpg" />
+    <Content Include="Images\reason1.png" />
+    <Content Include="Images\reason2.png" />
+    <Content Include="Images\reason3.png" />
+    <Content Include="Images\right.png" />
+    <Content Include="Images\Smoke.png" />
+    <Content Include="Images\students.jpg" />
+    <Content Include="Images\s_main.jpg" />
+    <Content Include="Images\themes.gif" />
+    <Content Include="Images\tp01.jpg" />
+    <Content Include="Images\tp02.jpg" />
+    <Content Include="Images\tr-b.png" />
+    <Content Include="Images\tr.JPG" />
+    <Content Include="Images\travel\1-1502021I335P6.jpg" />
+    <Content Include="Images\travel\1-150205150352G1.jpg" />
+    <Content Include="Images\travel\1-150205163Z9B9.jpg" />
+    <Content Include="Images\travel\1-1502051A620945.jpg" />
+    <Content Include="Images\travel\pei\1-1502021H111Q5.jpg" />
+    <Content Include="Images\travel\pei\1-1502021H125647.jpg" />
+    <Content Include="Images\travel\pei\1-1502021H152303.jpg" />
+    <Content Include="Images\travel\pei\1-1502021H20Na.jpg" />
+    <Content Include="Images\travel\pei\1-1502021H244427.jpg" />
+    <Content Include="Images\travel\pei\1-1502021H304319.jpg" />
+    <Content Include="Images\travel\pei\1-1502021H324461.jpg" />
+    <Content Include="Images\travel\pei\1-1502021H33T44.jpg" />
+    <Content Include="Images\travel\qb\1-150205154140491.jpg" />
+    <Content Include="Images\travel\qb\1-150205154210495.jpg" />
+    <Content Include="Images\travel\qb\1-150205154400S0.jpg" />
+    <Content Include="Images\travel\qb\1-15020515442c52.jpg" />
+    <Content Include="Images\travel\qb\1-15020515463J36.jpg" />
+    <Content Include="Images\travel\qb\1-150205154924948.jpg" />
+    <Content Include="Images\travel\qb\1-15020515494B43.jpg" />
+    <Content Include="Images\travel\qb\1-150205154H1247.jpg" />
+    <Content Include="Images\travel\qb\1-150205160149155.jpg" />
+    <Content Include="Images\travel\qb\1-15020516020Ka.jpg" />
+    <Content Include="Images\travel\qb\1-1502051602443A.jpg" />
+    <Content Include="Images\travel\qb\1-150205160304U8.jpg" />
+    <Content Include="Images\travel\qb\1-15020516034R61.jpg" />
+    <Content Include="Images\travel\qb\1-150205160422b5.jpg" />
+    <Content Include="Images\travel\sas\1-1502051F051R5.jpg" />
+    <Content Include="Images\travel\sas\1-1502051F11b48.jpg" />
+    <Content Include="Images\travel\sas\1-1502051F213a2.jpg" />
+    <Content Include="Images\travel\sas\1-1502051F231612.jpg" />
+    <Content Include="Images\travel\sas\1-1502051F309212.jpg" />
+    <Content Include="Images\travel\sas\1-1502051F32OP.jpg" />
+    <Content Include="Images\travel\sp01\Image_001.jpg" />
+    <Content Include="Images\travel\sp01\Image_002.jpg" />
+    <Content Include="Images\travel\sp01\Image_003.jpg" />
+    <Content Include="Images\travel\sp01\Image_004.png" />
+    <Content Include="Images\travel\sp01\Image_005.jpg" />
+    <Content Include="Images\travel\sp01\Image_006.jpg" />
+    <Content Include="Images\travel\sp01\Image_007.jpg" />
+    <Content Include="Images\travel\sp01\Image_008.jpg" />
+    <Content Include="Images\travel\sp01\Image_009.jpg" />
+    <Content Include="Images\travel\sp01\Image_010.jpg" />
+    <Content Include="Images\travel\sp01\Image_011.jpg" />
+    <Content Include="Images\travel\sp01\Image_012.jpg" />
+    <Content Include="Images\travel\sp01\Image_013.jpg" />
+    <Content Include="Images\travel\sp01\Image_014.jpg" />
+    <Content Include="Images\travel\sp01\Image_015.jpg" />
+    <Content Include="Images\travel\sp01\Image_016.jpg" />
+    <Content Include="Images\travel\tm01.jpg" />
+    <Content Include="Images\travel\tm02.jpg" />
+    <Content Include="Images\travel\tm03.jpg" />
+    <Content Include="Images\travel\tm04.jpg" />
+    <Content Include="Images\travel\tm05.jpg" />
+    <Content Include="Images\travel\tm06.jpg" />
+    <Content Include="Images\travel\tm07.jpg" />
+    <Content Include="Images\travel\tm08.jpg" />
+    <Content Include="Images\travel\tm09.jpg" />
+    <Content Include="Images\travel\tm10.jpg" />
+    <Content Include="Images\university.jpg" />
+    <Content Include="Images\up.png" />
+    <Content Include="Images\usvisa.jpg" />
+    <Content Include="Images\visa\immigrateIcon.png" />
+    <Content Include="Images\visa\inadmissibilityIcon.png" />
+    <Content Include="Images\visa\InvestIcon.png" />
+    <Content Include="Images\visa\LegalIcon.png" />
+    <Content Include="Images\visa\NewCanIcon.png" />
+    <Content Include="Images\visa\SponsorIcon.png" />
+    <Content Include="Images\visa\StudyIcon.png" />
+    <Content Include="Images\visa\WorkIcon.png" />
+    <Content Include="Images\work.jpg" />
+    <Content Include="investment\invest-main.aspx" />
+    <Content Include="investment\mb.aspx" />
+    <Content Include="investment\on.aspx" />
+    <Content Include="investment\on-calculator.aspx" />
+    <Content Include="investment\qb.aspx" />
+    <Content Include="investment\sa.aspx" />
+    <Content Include="js\cal_on.js" />
+    <Content Include="js\de_main.js" />
+    <Content Include="js\flexslider\froogaloop.js" />
+    <Content Include="js\flexslider\jquery.easing.js" />
+    <Content Include="js\flexslider\jquery.fitvid.js" />
+    <Content Include="js\flexslider\jquery.flexslider.js" />
+    <Content Include="js\flexslider\jquery.mousewheel.js" />
+    <Content Include="js\flexslider\shBrushCss.js" />
+    <Content Include="js\flexslider\shBrushJScript.js" />
+    <Content Include="js\flexslider\shBrushXml.js" />
+    <Content Include="js\flexslider\shCore.js" />
+    <Content Include="js\jquery.backstretch.js" />
+    <Content Include="js\jquery.mkinfinite.js" />
+    <Content Include="css\slider.css" />
+    <Content Include="js\lightbox.js" />
+    <Content Include="js\modernizr.js" />
+    <Content Include="js\responsiveslides.min.js" />
+    <Content Include="js\slider.js" />
+    <Content Include="js\tracking.js" />
+    <Content Include="firstclass\firstclass_1.aspx" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Images\logo.ici" />
+    <Content Include="fonts\flexslider-icon.eot" />
+    <Content Include="fonts\flexslider-icon.ttf" />
+    <Content Include="fonts\flexslider-icon.woff" />
+    <Content Include="invest.Master" />
+    <Content Include="introduction.aspx" />
+    <Content Include="deSub.Master" />
+    <Content Include="dist\fonts\social-share-kit.eot" />
+    <Content Include="dist\fonts\social-share-kit.ttf" />
+    <Content Include="dist\fonts\social-share-kit.woff" />
+    <Content Include="housing.Master" />
+    <Content Include="Images\logo-v.psd" />
+    <Content Include="Images\logo-i.psd" />
+    <Content Include="Images\.picasa.ini" />
+    <Content Include="Images\.picasaoriginals\.picasa.ini" />
+    <Content Include="education.Master" />
+    <None Include="Properties\PublishProfiles\trustplusgroup.ca - Web Deploy.pubxml" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\easing.js" />
+    <Content Include="peq\peq-college.aspx" />
+    <Content Include="peq\peq-faq.aspx" />
+    <Content Include="peq\peq-french.aspx" />
+    <Content Include="peq\peq-immigration.aspx" />
+    <Content Include="peq\peq-main.aspx" />
+    <Content Include="peq\peq-prior.aspx" />
+    <Content Include="peq\peq-prof.aspx" />
+    <Content Include="peq\peq-university.aspx" />
+    <Content Include="peq\peq-schools.aspx" />
+    <Content Include="portfolio\alan-lu.aspx" />
+    <Content Include="portfolio\alex-romano.aspx" />
+    <Content Include="portfolio\anne-liu.aspx" />
+    <Content Include="portfolio\daniel-woods.aspx" />
+    <Content Include="portfolio\emily-yang.aspx" />
+    <Content Include="portfolio\hong-yang.aspx" />
+    <Content Include="portfolio\james-wang.aspx" />
+    <Content Include="portfolio\kathy-chen.aspx" />
+    <Content Include="portfolio\lex-yu.aspx" />
+    <Content Include="portfolio\sally-zhao.aspx" />
+    <Content Include="portfolio\tony-wang.aspx" />
+    <Content Include="portfolio\yvonne-m.aspx" />
+    <Content Include="portfolio\yvonne-s.aspx" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="js\jquery.smint.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="js\move-top.js" />
+    <Content Include="js\scrolling-nav.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="slider\img\001.jpg" />
+    <Content Include="slider\img\002.jpg" />
+    <Content Include="slider\img\003.jpg" />
+    <Content Include="slider\img\004.jpg" />
+    <Content Include="slider\img\005.jpg" />
+    <Content Include="slider\img\006.jpg" />
+    <Content Include="slider\img\007.jpg" />
+    <Content Include="slider\img\008.jpg" />
+    <Content Include="slider\img\009.jpg" />
+    <Content Include="slider\img\a17.png" />
+    <Content Include="slider\img\loading.gif" />
+    <Content Include="slider\img\t01.png" />
+    <Content Include="slider\img\thumb-01.jpg" />
+    <Content Include="slider\img\thumb-02.jpg" />
+    <Content Include="slider\img\thumb-03.jpg" />
+    <Content Include="slider\img\thumb-04.jpg" />
+    <Content Include="slider\img\thumb-05.jpg" />
+    <Content Include="slider\img\thumb-06.jpg" />
+    <Content Include="slider\img\thumb-07.jpg" />
+    <Content Include="slider\img\thumb-08.jpg" />
+    <Content Include="slider\img\thumb-09.jpg" />
+    <Content Include="slider\js\jquery-1.9.1.min.js" />
+    <Content Include="slider\js\jssor.slider.debug.js" />
+    <Content Include="slider\js\jssor.slider.min.js" />
+    <Content Include="slider\js\jssor.slider.mini.js" />
+    <Content Include="travel\albs.aspx" />
+    <Content Include="travel\bcs.aspx" />
+    <Content Include="travel\info.aspx" />
+    <Content Include="travel\journey.aspx" />
+    <Content Include="travel\mbs.aspx" />
+    <Content Include="travel\nbs.aspx" />
+    <Content Include="travel\news.aspx" />
+    <Content Include="travel\nss.aspx" />
+    <Content Include="travel\ons.aspx" />
+    <Content Include="travel\peis.aspx" />
+    <Content Include="travel\planning.aspx" />
+    <Content Include="travel\qbs.aspx" />
+    <Content Include="travel\sas.aspx" />
+    <Content Include="travel\sceneries.aspx" />
+    <Content Include="travel\Iqaluit.aspx" />
+    <Content Include="travel\special.aspx" />
+    <Content Include="travel\travel-main.aspx" />
+    <Content Include="schools\schools.aspx" />
+    <Content Include="travel\trsp01.aspx" />
+    <Content Include="visa\services.aspx" />
+    <Content Include="visa\visa.aspx" />
+    <Content Include="visa\visav2.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="deSub.Master.cs">
+      <DependentUpon>deSub.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="deSub.Master.designer.cs">
+      <DependentUpon>deSub.Master</DependentUpon>
+    </Compile>
+    <Compile Include="education.aspx.cs">
+      <DependentUpon>education.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="education.aspx.designer.cs">
+      <DependentUpon>education.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="education.Master.cs">
+      <DependentUpon>education.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="education.Master.designer.cs">
+      <DependentUpon>education.Master</DependentUpon>
+    </Compile>
+    <Compile Include="firstclass\firstclass_5.aspx.cs">
+      <DependentUpon>firstclass_5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="firstclass\firstclass_5.aspx.designer.cs">
+      <DependentUpon>firstclass_5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="firstclass\firstclass_4.aspx.cs">
+      <DependentUpon>firstclass_4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="firstclass\firstclass_4.aspx.designer.cs">
+      <DependentUpon>firstclass_4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="firstclass\firstclass_3.aspx.cs">
+      <DependentUpon>firstclass_3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="firstclass\firstclass_3.aspx.designer.cs">
+      <DependentUpon>firstclass_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="firstclass\firstclass_2.aspx.cs">
+      <DependentUpon>firstclass_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="firstclass\firstclass_2.aspx.designer.cs">
+      <DependentUpon>firstclass_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="investment\bc.aspx.cs">
+      <DependentUpon>bc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="investment\bc.aspx.designer.cs">
+      <DependentUpon>bc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pnp.aspx.cs">
+      <DependentUpon>pnp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pnp.aspx.designer.cs">
+      <DependentUpon>pnp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="schools\schoolsv5.aspx.cs">
+      <DependentUpon>schoolsv5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="schools\schoolsv5.aspx.designer.cs">
+      <DependentUpon>schoolsv5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="schools\schoolsv4.aspx.cs">
+      <DependentUpon>schoolsv4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="schools\schoolsv4.aspx.designer.cs">
+      <DependentUpon>schoolsv4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="schools\schoolsv3.aspx.cs">
+      <DependentUpon>schoolsv3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="schools\schoolsv3.aspx.designer.cs">
+      <DependentUpon>schoolsv3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="schools\schoolsv2.aspx.cs">
+      <DependentUpon>schoolsv2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="schools\schoolsv2.aspx.designer.cs">
+      <DependentUpon>schoolsv2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visa\visav16.aspx.cs">
+      <DependentUpon>visav16.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visa\visav16.aspx.designer.cs">
+      <DependentUpon>visav16.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visa\visav15.aspx.cs">
+      <DependentUpon>visav15.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visa\visav15.aspx.designer.cs">
+      <DependentUpon>visav15.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visa\visav17.aspx.cs">
+      <DependentUpon>visav17.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visa\visav17.aspx.designer.cs">
+      <DependentUpon>visav17.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visa\visav14.aspx.cs">
+      <DependentUpon>visav14.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visa\visav14.aspx.designer.cs">
+      <DependentUpon>visav14.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visa\visav13.aspx.cs">
+      <DependentUpon>visav13.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visa\visav13.aspx.designer.cs">
+      <DependentUpon>visav13.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visa\visav5.aspx.cs">
+      <DependentUpon>visav5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visa\visav5.aspx.designer.cs">
+      <DependentUpon>visav5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visa\visav6.aspx.cs">
+      <DependentUpon>visav6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visa\visav6.aspx.designer.cs">
+      <DependentUpon>visav6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visa\visav7.aspx.cs">
+      <DependentUpon>visav7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visa\visav7.aspx.designer.cs">
+      <DependentUpon>visav7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visa\visav8.aspx.cs">
+      <DependentUpon>visav8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visa\visav8.aspx.designer.cs">
+      <DependentUpon>visav8.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visa\visav9.aspx.cs">
+      <DependentUpon>visav9.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visa\visav9.aspx.designer.cs">
+      <DependentUpon>visav9.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visa\visav12.aspx.cs">
+      <DependentUpon>visav12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visa\visav12.aspx.designer.cs">
+      <DependentUpon>visav12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visa\visav10.aspx.cs">
+      <DependentUpon>visav10.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visa\visav10.aspx.designer.cs">
+      <DependentUpon>visav10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visa\visav11.aspx.cs">
+      <DependentUpon>visav11.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visa\visav11.aspx.designer.cs">
+      <DependentUpon>visav11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visa\visav4.aspx.cs">
+      <DependentUpon>visav4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visa\visav4.aspx.designer.cs">
+      <DependentUpon>visav4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visa\visav3.aspx.cs">
+      <DependentUpon>visav3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visa\visav3.aspx.designer.cs">
+      <DependentUpon>visav3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visa\firstclass.aspx.cs">
+      <DependentUpon>firstclass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visa\firstclass.aspx.designer.cs">
+      <DependentUpon>firstclass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="housing-trust\housingtrust.aspx.cs">
+      <DependentUpon>housingtrust.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="housing-trust\housingtrust.aspx.designer.cs">
+      <DependentUpon>housingtrust.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="housing-trust\services.aspx.cs">
+      <DependentUpon>services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="housing-trust\services.aspx.designer.cs">
+      <DependentUpon>services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="housing.Master.cs">
+      <DependentUpon>housing.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="housing.Master.designer.cs">
+      <DependentUpon>housing.Master</DependentUpon>
+    </Compile>
+    <Compile Include="invest.Master.cs">
+      <DependentUpon>invest.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="invest.Master.designer.cs">
+      <DependentUpon>invest.Master</DependentUpon>
+    </Compile>
+    <Compile Include="investment\invest-main.aspx.cs">
+      <DependentUpon>invest-main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="investment\invest-main.aspx.designer.cs">
+      <DependentUpon>invest-main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="investment\mb.aspx.cs">
+      <DependentUpon>mb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="investment\mb.aspx.designer.cs">
+      <DependentUpon>mb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="investment\on.aspx.cs">
+      <DependentUpon>on.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="investment\on.aspx.designer.cs">
+      <DependentUpon>on.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="investment\on-calculator.aspx.cs">
+      <DependentUpon>on-calculator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="investment\on-calculator.aspx.designer.cs">
+      <DependentUpon>on-calculator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="investment\qb.aspx.cs">
+      <DependentUpon>qb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="investment\qb.aspx.designer.cs">
+      <DependentUpon>qb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="investment\sa.aspx.cs">
+      <DependentUpon>sa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="investment\sa.aspx.designer.cs">
+      <DependentUpon>sa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sub.Master.cs">
+      <DependentUpon>sub.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sub.Master.designer.cs">
+      <DependentUpon>sub.Master</DependentUpon>
+    </Compile>
+    <Compile Include="firstclass\firstclass_1.aspx.cs">
+      <DependentUpon>firstclass_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="firstclass\firstclass_1.aspx.designer.cs">
+      <DependentUpon>firstclass_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="peq\peq-college.aspx.cs">
+      <DependentUpon>peq-college.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="peq\peq-college.aspx.designer.cs">
+      <DependentUpon>peq-college.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="peq\peq-faq.aspx.cs">
+      <DependentUpon>peq-faq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="peq\peq-faq.aspx.designer.cs">
+      <DependentUpon>peq-faq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="peq\peq-french.aspx.cs">
+      <DependentUpon>peq-french.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="peq\peq-french.aspx.designer.cs">
+      <DependentUpon>peq-french.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="peq\peq-immigration.aspx.cs">
+      <DependentUpon>peq-immigration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="peq\peq-immigration.aspx.designer.cs">
+      <DependentUpon>peq-immigration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="peq\peq-main.aspx.cs">
+      <DependentUpon>peq-main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="peq\peq-main.aspx.designer.cs">
+      <DependentUpon>peq-main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="peq\peq-prior.aspx.cs">
+      <DependentUpon>peq-prior.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="peq\peq-prior.aspx.designer.cs">
+      <DependentUpon>peq-prior.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="peq\peq-prof.aspx.cs">
+      <DependentUpon>peq-prof.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="peq\peq-prof.aspx.designer.cs">
+      <DependentUpon>peq-prof.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="peq\peq-university.aspx.cs">
+      <DependentUpon>peq-university.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="peq\peq-university.aspx.designer.cs">
+      <DependentUpon>peq-university.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="peq\peq-schools.aspx.cs">
+      <DependentUpon>peq-schools.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="peq\peq-schools.aspx.designer.cs">
+      <DependentUpon>peq-schools.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portfolio\alan-lu.aspx.cs">
+      <DependentUpon>alan-lu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portfolio\alan-lu.aspx.designer.cs">
+      <DependentUpon>alan-lu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portfolio\alex-romano.aspx.cs">
+      <DependentUpon>alex-romano.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portfolio\alex-romano.aspx.designer.cs">
+      <DependentUpon>alex-romano.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portfolio\anne-liu.aspx.cs">
+      <DependentUpon>anne-liu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portfolio\anne-liu.aspx.designer.cs">
+      <DependentUpon>anne-liu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portfolio\daniel-woods.aspx.cs">
+      <DependentUpon>daniel-woods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portfolio\daniel-woods.aspx.designer.cs">
+      <DependentUpon>daniel-woods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portfolio\emily-yang.aspx.cs">
+      <DependentUpon>emily-yang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portfolio\emily-yang.aspx.designer.cs">
+      <DependentUpon>emily-yang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portfolio\hong-yang.aspx.cs">
+      <DependentUpon>hong-yang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portfolio\hong-yang.aspx.designer.cs">
+      <DependentUpon>hong-yang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portfolio\james-wang.aspx.cs">
+      <DependentUpon>james-wang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portfolio\james-wang.aspx.designer.cs">
+      <DependentUpon>james-wang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portfolio\kathy-chen.aspx.cs">
+      <DependentUpon>kathy-chen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portfolio\kathy-chen.aspx.designer.cs">
+      <DependentUpon>kathy-chen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portfolio\lex-yu.aspx.cs">
+      <DependentUpon>lex-yu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portfolio\lex-yu.aspx.designer.cs">
+      <DependentUpon>lex-yu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portfolio\sally-zhao.aspx.cs">
+      <DependentUpon>sally-zhao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portfolio\sally-zhao.aspx.designer.cs">
+      <DependentUpon>sally-zhao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portfolio\tony-wang.aspx.cs">
+      <DependentUpon>tony-wang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portfolio\tony-wang.aspx.designer.cs">
+      <DependentUpon>tony-wang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portfolio\yvonne-m.aspx.cs">
+      <DependentUpon>yvonne-m.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portfolio\yvonne-m.aspx.designer.cs">
+      <DependentUpon>yvonne-m.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portfolio\yvonne-s.aspx.cs">
+      <DependentUpon>yvonne-s.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portfolio\yvonne-s.aspx.designer.cs">
+      <DependentUpon>yvonne-s.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="peq.Master.cs">
+      <DependentUpon>peq.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="peq.Master.designer.cs">
+      <DependentUpon>peq.Master</DependentUpon>
+    </Compile>
+    <Compile Include="introduction.aspx.cs">
+      <DependentUpon>introduction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="introduction.aspx.designer.cs">
+      <DependentUpon>introduction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tr.Master.cs">
+      <DependentUpon>tr.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tr.Master.designer.cs">
+      <DependentUpon>tr.Master</DependentUpon>
+    </Compile>
+    <Compile Include="travel\albs.aspx.cs">
+      <DependentUpon>albs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="travel\albs.aspx.designer.cs">
+      <DependentUpon>albs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="travel\bcs.aspx.cs">
+      <DependentUpon>bcs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="travel\bcs.aspx.designer.cs">
+      <DependentUpon>bcs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="travel\info.aspx.cs">
+      <DependentUpon>info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="travel\info.aspx.designer.cs">
+      <DependentUpon>info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="travel\journey.aspx.cs">
+      <DependentUpon>journey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="travel\journey.aspx.designer.cs">
+      <DependentUpon>journey.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="travel\mbs.aspx.cs">
+      <DependentUpon>mbs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="travel\mbs.aspx.designer.cs">
+      <DependentUpon>mbs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="travel\nbs.aspx.cs">
+      <DependentUpon>nbs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="travel\nbs.aspx.designer.cs">
+      <DependentUpon>nbs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="travel\news.aspx.cs">
+      <DependentUpon>news.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="travel\news.aspx.designer.cs">
+      <DependentUpon>news.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="travel\nss.aspx.cs">
+      <DependentUpon>nss.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="travel\nss.aspx.designer.cs">
+      <DependentUpon>nss.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="travel\ons.aspx.cs">
+      <DependentUpon>ons.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="travel\ons.aspx.designer.cs">
+      <DependentUpon>ons.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="travel\peis.aspx.cs">
+      <DependentUpon>peis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="travel\peis.aspx.designer.cs">
+      <DependentUpon>peis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="travel\planning.aspx.cs">
+      <DependentUpon>planning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="travel\planning.aspx.designer.cs">
+      <DependentUpon>planning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="travel\qbs.aspx.cs">
+      <DependentUpon>qbs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="travel\qbs.aspx.designer.cs">
+      <DependentUpon>qbs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="travel\sas.aspx.cs">
+      <DependentUpon>sas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="travel\sas.aspx.designer.cs">
+      <DependentUpon>sas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="travel\sceneries.aspx.cs">
+      <DependentUpon>sceneries.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="travel\sceneries.aspx.designer.cs">
+      <DependentUpon>sceneries.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="travel\Iqaluit.aspx.cs">
+      <DependentUpon>Iqaluit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="travel\Iqaluit.aspx.designer.cs">
+      <DependentUpon>Iqaluit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="travel\special.aspx.cs">
+      <DependentUpon>special.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="travel\special.aspx.designer.cs">
+      <DependentUpon>special.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="travel\travel-main.aspx.cs">
+      <DependentUpon>travel-main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="travel\travel-main.aspx.designer.cs">
+      <DependentUpon>travel-main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="schools\schools.aspx.cs">
+      <DependentUpon>schools.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="schools\schools.aspx.designer.cs">
+      <DependentUpon>schools.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="travel\trsp01.aspx.cs">
+      <DependentUpon>trsp01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="travel\trsp01.aspx.designer.cs">
+      <DependentUpon>trsp01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visa\services.aspx.cs">
+      <DependentUpon>services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visa\services.aspx.designer.cs">
+      <DependentUpon>services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visa\visa.aspx.cs">
+      <DependentUpon>visa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visa\visa.aspx.designer.cs">
+      <DependentUpon>visa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="visa\visav2.aspx.cs">
+      <DependentUpon>visav2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="visa\visav2.aspx.designer.cs">
+      <DependentUpon>visav2.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="fonts\express-entry\" />
+    <Folder Include="Images\travel\sp02\" />
+    <Folder Include="Images\travel\sp03\" />
+    <Folder Include="Images\travel\sp04\" />
+    <Folder Include="Images\travel\sp05\" />
+    <Folder Include="Images\travel\sp06\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="peq.Master" />
+    <Content Include="tr.Master" />
+    <Content Include="sub.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADODB">
+      <Guid>{B691E011-1797-432E-907A-4D8C69339129}</Guid>
+      <VersionMajor>6</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CDO">
+      <Guid>{CD000000-8B95-11D1-82DB-00C04FB1625D}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>23261</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:44469/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

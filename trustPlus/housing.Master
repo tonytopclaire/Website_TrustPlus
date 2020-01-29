@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="housing.master.cs" Inherits="trustPlus.housing" %>
+
+<!DOCTYPE html>
+<HTML lang="en">
+<HEAD id="HEAD1" runat="server">
+    <META charset="utf-8" />
+    <META name="viewport" content="width=device-width, initial-scale=1">
+    <META http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <TITLE><%: Page.Title %>&nbsp;房屋托管&nbsp;|&nbsp;正信联合出国顾问公司</TITLE>
+    <LINK href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <LINK href="~/css/bootstrap.css" rel="stylesheet" />
+    <LINK href="~/css/style.css" rel="stylesheet" />
+    <LINK href="~/css/animate.css" rel="stylesheet" />
+    <LINK href="~/css/slider.css" rel="stylesheet" />
+    <LINK href="~/css/responsive.css" rel="stylesheet" />
+    <LINK href="~/css/para.css" rel="stylesheet" />
+    <LINK href="~/css/responsiveslides.css" rel="stylesheet" />
+    <LINK href="~/css/themes.css" rel="stylesheet" />
+    <LINK href="~/css/flexslider.css" type="text/css" media="screen" rel="stylesheet" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+</HEAD>
+<BODY>
+    <FORM id="FORM1" runat="server">
+        <HEADER>
+            <!--header-->
+            <DIV class="para-t-header">
+                <DIV class="container">
+                    <NAV class="navbar navbar-default" style="background: none; border: none;">
+                        <DIV class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <DIV class="navbar-header">
+                                <BUTTON type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <SPAN class="sr-only">链接</SPAN>
+                                    <SPAN class="icon-bar"></SPAN>
+                                    <SPAN class="icon-bar"></SPAN>
+                                    <SPAN class="icon-bar"></SPAN>
+                                </BUTTON>
+                                <A href="../housing-trust/housingtrust.aspx" >
+                                    <IMG src="../images/logo-n-h.png" alt="" /></A>
+                            </DIV>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <DIV class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <UL class="nav navbar-nav">
+                                    <LI class="dropdown">
+                                        <A href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">服务内容 <SPAN class="caret"></SPAN></A>
+                                        <UL class="dropdown-menu">
+                                            <LI><A href="../housing-trust/services.aspx#tab1" class="scroll">服务简介</A></LI>
+                                            <LI role="separator" class="divider"></LI>
+                                            <LI><A href="../housing-trust/services.aspx#nores" class="scroll">非居民税务</A></LI>
+                                            <LI><A href="../housing-trust/services.aspx#tax" class="scroll">退税服务</A></LI>
+                                            <LI><A href="../housing-trust/services.aspx#maint" class="scroll">房屋维修及维护</A></LI>
+                                        </UL>
+                                    </LI>
+                                </UL>
+                                <UL class="nav navbar-nav">
+                                    <LI class="dropdown">
+                                        <A href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">管理内容<SPAN class="caret"></SPAN></A>
+                                        <UL class="dropdown-menu">
+                                            <LI><A href="../housing-trust/services.aspx" class="scroll">新屋检验 (PDI)</A></LI>
+                                            <LI><A href="../housing-trust/services.aspx" class="scroll">物业管理</A></LI>
+                                            <LI><A href="../housing-trust/services.aspx" class="scroll">财务管理</A></LI>
+                                            <LI><A href="../housing-trust/rental.aspx" class="scroll">房屋出租管理</A></LI>
+                                        </UL>
+                                    </LI>
+                                </UL>
+                                <UL class="nav navbar-nav">
+                                    <LI class="dropdown">
+                                        <A href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">咨询服务 <SPAN class="caret"></SPAN></A>
+                                        <UL class="dropdown-menu">
+                                            <LI><A href="../housing-trust/services.aspx" class="scroll">物业投资咨询</A></LI>
+                                            <LI><A href="../housing-trust/services.aspx" class="scroll">房屋保险</A></LI>
+                                            <LI><A href="../housing-trust/services.aspx" class="scroll">资本收益回报</A></LI>
+                                        </UL>
+                                    </LI>
+                                </UL>
+                                <UL class="nav navbar-nav navbar-right">
+                                    <LI><A href="../default.aspx" >TrustPlus正信出国</A></LI>
+                                </UL>
+                            </DIV>
+                            <!-- /.navbar-collapse -->
+                        </DIV>
+                        <!-- /.container-fluid -->
+                    </NAV>
+                </DIV>
+            </DIV>
+            <DIV style="min-height: 50px; background: #243046;"></DIV>
+        </HEADER>
+        <DIV id="body" class="body">
+            <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+            <SECTION class="content-wrapper main-content clear-fix">
+                <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+            </SECTION>
+        </DIV>
+        <FOOTER>
+            <DIV class="footer">
+                <DIV class="footer-bottom">
+                    <DIV style="width: 50%; color: #fff; margin: 0 auto; font-size: medium;">
+                        <DIV style="float: right; width: 100%;">
+                            <UL style="list-style-type: none;">
+                                <LI><B>加拿大·多伦多·总部</B></LI>
+                                <LI>地址：2075 Kennedy Road,Suite 405,M1T 3V3,Toronto</LI>
+                                <LI>加拿大电话：+1-416-321-9699</LI>
+                            </UL>
+                        </DIV>
+                    </DIV>
+                    <DIV class="clearfix"></DIV>
+                </DIV>
+                <DIV class="footer-top2">
+                    <P>&#169; 2016 Trust Plus Overseas Affairs incorporation. (正信联合出国顾问公司) All rights reserved.</P>
+                </DIV>
+            </DIV>
+        </FOOTER>
+    </FORM>
+</BODY>
+</HTML>

@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="peq.Master.cs" Inherits="trustPlus.Site1" %>
+
+<!DOCTYPE html>
+<HTML lang="en">
+<HEAD runat="server">
+    <META charset="utf-8" />
+    <META name="viewport" content="width=device-width, initial-scale=1">
+    <META http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <TITLE><%: Page.Title %>&nbsp;正信联合出国顾问公司</TITLE>
+    <LINK href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <LINK href="~/css/bootstrap.css" rel="stylesheet" />
+    <LINK href="~/css/style.css" rel="stylesheet" />
+    <LINK href="~/css/animate.css" rel="stylesheet" />
+    <LINK href="~/css/slider.css" rel="stylesheet" />
+    <LINK href="~/css/responsive.css" rel="stylesheet" />
+    <LINK href="~/css/para.css" rel="stylesheet" />
+    <LINK rel="stylesheet" href="~/css/flexslider.css" type="text/css" media="screen" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+
+</HEAD>
+<BODY>
+
+    <FORM id="FORM1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=272931&clcid=0x409 --%>
+                <%--Framework scripts--%>
+                <%--                <asp:ScriptReference Name="MsAjaxBundle" />--%>
+                <asp:ScriptReference Name="jquery" />
+                <%--                <asp:ScriptReference Name="jquery.ui.combined" />--%>
+                <%--Site scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+        <HEADER>
+            <!--header-->
+            <DIV class="para-header">
+                <DIV class=" container-fluid">
+                    <DIV class="logo">
+                        <H1>
+                            <A href="../Default.aspx" >
+                                <IMG src="../images/logo.png" alt="" /></A></H1>
+                    </DIV>
+                    <DIV class="top-nav">
+                        <SPAN class="menu">
+                            <IMG src="../images/menu.png" alt="">
+                        </SPAN>
+                        <UL>
+                            <li><a href="../default.aspx" class="scroll" >正信出国主页</a></li>
+                            <LI id="u0"><A href="../peq/peq-main.aspx" class="scroll">PEQ快速移民</A></LI>
+                            <LI id="u1"><A href="../peq/peq-university.aspx" class="scroll">PEQ硕学士</A></LI>
+                            <LI id="u2"><A href="../peq/peq-college.aspx" class="scroll">PEQ大专</A></LI>
+                            <LI id="u3"><A href="../peq/peq-prof.aspx" class="scroll">PEQ职业培训</A></LI>
+                            <LI id="u4"><A href="../peq/peq-prior.aspx" class="scroll">PEQ预备学校</A></LI>
+                            <LI id="u5"><A href="../peq/peq-schools.aspx" class="scroll">PEQ学校</A></LI>
+                            <LI id="u6"><A href="../peq/peq-french.aspx" class="scroll">PEQ法语</A></LI>
+                            <LI id="u7"><A href="../peq/peq-immigration.aspx" class="scroll">PEQ政策</A></LI>
+                            <LI id="u8"><A href="../peq/peq-faq.aspx" class="scroll">PEQ问答</A></LI>
+                        </UL>
+                    </DIV>
+                </DIV>
+                <!---->
+            </DIV>
+        </HEADER>
+
+        <DIV id="body" class="para-body">
+            <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+            <SECTION class="content-wrapper main-content clear-fix">
+                <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+            </SECTION>
+        </DIV>
+        <FOOTER>
+            <DIV class="footer">
+                <DIV class="footer-bottom">
+
+                    <DIV style="width: 50%; color: #fff; margin: 0 auto; font-size: medium;">
+                        <DIV style="float: right; width: 50%;">
+                            <UL style="list-style-type: none;">
+                                <LI><B>加拿大·多伦多·总部</B></LI>
+                                <LI>地址：2075 Kennedy Road,Suite 405,M1T 3V3,Toronto</LI>
+                                <LI>加拿大电话：+1-416-321-9699</LI>
+                            </UL>
+                        </DIV>
+                        <DIV class="copyrtrt" style="float: left; width: 50%;">
+                            <UL style="list-style-type: none;">
+                                <LI><B>中国·上海徐汇·总部</B></LI>
+                                <LI>地址：上海市徐汇区华山路2088号700室</LI>
+                                <LI>上海电话：+86-21-54070506</LI>
+                            </UL>
+                        </DIV>
+                    </DIV>
+                    <DIV class="clearfix"></DIV>
+                </DIV>
+                <DIV class="footer-top2">
+                    <A href="#" id="toTop" style="display: block;"><SPAN id="toTopHover" style="opacity: 1;"></SPAN></A>
+                    <P>&#169; 2016 Trust Plus Overseas Affairs incorporation. (正信联合出国顾问公司) All rights reserved.</P>
+                </DIV>
+            </DIV>
+        </FOOTER>
+    </FORM>
+</BODY>
+</HTML>
+
